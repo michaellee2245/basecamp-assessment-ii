@@ -1,6 +1,10 @@
 // #1 Create an object called 'me' that has three keys, 'firstname' 'age' and 'state'. Assign the keys the appropriate values.
 
-// CODE HERE
+var me = {
+firstname: "Michael",
+age: 25,
+state: "Utah"
+};
 
 // #2 Add a new key/value pair to the me object using dot notation. The new key should be 'faveColor' and set it to your favorite color as a string
 
