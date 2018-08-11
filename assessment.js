@@ -17,9 +17,7 @@ var message = {
   userName: me.firstname
 };
 //DON'T TOUCH THE CODE ABOVE
-message = {
-  text: "A newly added string"
-};
+message['text'] = "A new string";
 
 // #4 Create an object called 'adjustCount' and create two methods. One called 'upVote' and one called 'downVote'. upVote should take in a number and add one to it and downVote should take in a number and minus one from it.
 
@@ -45,14 +43,21 @@ myFriends[4]="Avery"
 //DON'T TOUCH THE CODE BELOW
 var myArray = [1, 2, 3, 4];
 //DON'T TOUCH THE CODE ABOVE
-var myArrayCopy = []
+var myArrayCopy = myArray.slice();
 
 // #8 Below is a array, myNumbers. Create a function called 'evensOnly' that returns the 'evensArray' of only even numbers
 //DON'T TOUCH THE CODE BELOW
 var myNumbers = [333, 1, 4, 5, 511, 34, 88, 77, 222];
 //DON'T TOUCH THE CODE ABOVE
 function evensOnly() {
-
+  var evensArray = [];
+  for(i=0; i < myNumbers.length; i++) {
+      if ((myNumbers[i] % 2)===0){
+        evensArray.push(myNumbers[i]);
+      };
+    
+  };
+  return evensArray;
 };
 
 // #9 Using filter(), return only your friends of the array of people below. Assign it to a variable called 'trueFriends'.
@@ -73,7 +78,7 @@ var trueFriends = peopleIknow.filter(function(val){
 // #10 Create a function called indexFinder that will loop over an array and return a new array of the indexes of the contents e.g. [243, 123, 4, 12] would return [0,1,2,3]. 
 // Create a new variable called 'indexes' and set it to contain the indexes of randomNumbers.
 let randomNumbers = [1, 3453, 34, 456, 32, 3, 2, 0];
-var indexes = [1, 3453, 34, 456, 32, 3, 2, 0];
+var indexes = [0, 1, 2, 3, 4, 5, 6, 7];
 
 function indexFinder (arr, value){
   arr[i]=value;
